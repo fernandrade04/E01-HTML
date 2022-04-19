@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e Expressões Matemáticas</title>
+</head>
+<body>
+    <h1>Variáveis e Expressões Matemáticas</h1>
+    <section>
+    <h2>
+        O que é uma variável?
+    </h2>
+    <p>Variável é um local reservado na memória para armazenar um tipo de dado.
+        Toda variável deve ter um identificador, ou seja um nome.        
+        Além de ter um nome, a variável também precisa ter um tipo.        
+        O tipo de dado de uma variável determina o que ela é capaz de armazenar.</p>
+    <p>
+        Existem diversos tipos de dados que podem ser usados nas variáveis.
+Cada tipo de dado é específico para armazenar uma determinado formato de dado.
+Podemos dizer que os principais tipos de dados numéricos dividem-se em:
+    </p>
+    <ul>
+        <li>Inteiro: armazena números inteiros</li>
+        <li>Real: armazena números com casas decimais, são as variáveis de ponto flutuante;</li>
+    </ul>
+    <p>O tipo de dado caracter é capaz de representar um caracter ou um conjunto de caracteres (letras, dígitos ou símbolos) .</p>
+    <h2>Tipos de dados mais comuns em linguagem C</h2>
+    <ul>
+        <li>int: armazena valores numéricos inteiros.</li>
+        <li>char: armazena caracteres.</li>
+        <li>float: armazena números com ponto flutuante (reais) com precisão simples</li>
+        <li>double: armazena números com ponto flutuante, com precisão dupla, ou seja normalmente possui o dobro da capacidade de uma variável do tipo float.</li>
+    </ul>
+
+    </section>
+    <section>
+        <h2>
+            O que são Expressões Matemáticas?
+        </h2>
+        <p>As expressões são compostas por <b>operadores aritméticos.</b> Um operador é um símbolo que indica a realização de uma operação sobre uma ou mais variáveis ou valores. Há uma grande diversidade de operadores em C, sendo os principais apresentados nesta seção.</p>
+        <p>Os operadores aritméticos são:</p>
+        <ul>
+            <li>+</li>
+            <li>-</li>
+            <li>++</li>
+            <li>--</li>
+            <li>%</li>
+            <li>/</li>
+            <li>*</li>
+        </ul>
+        <p>Função de cada operador:
+            +	soma, -	subtração, *	multiplicação, /	divisão inteira, %	módulo, ++	incremento, --	decremento.
+        </p>
+    </section>
+    <section>
+        <h2>Exemplo</h2>
+        <p>
+            #include <stdio.h>
+                #include <stdlib.h>
+                int main (void)
+                {
+                  //declaração de variáveis do tipo inteiro
+                  int a, b, soma;
+                  
+                  printf("Digite um numero inteiro: ");
+                  scanf("%d", &a); //recebe um inteiro e armazena na variável a
+                  
+                  printf("Digite um numero inteiro: ");
+                  scanf("%d", &b); //recebe um inteiro e armazena na variável b
+                  soma = a + b;
+                  //Efetua adição de a com b e armazena na variável soma
+                  
+                  printf("O valor da soma = %d\n", soma); //Mostra mensagem com o resultado
+                  
+                  system ("pause");
+                  return(0);
+                }
+        </p>
+        <p>Este exemplo é um código para somar dois números, e se usa variáveis e operadores.</p>
+    </section>
+</body>
+</html>
